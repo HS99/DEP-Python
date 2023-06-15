@@ -1,0 +1,7 @@
+file = open("binfile.bin","wb")
+sentence = bytearray("This is good".encode("ascii"))
+file.write(sentence)
+file.close()
+file = open("binfile.bin","rb")
+print(file.read())
+file.close()
